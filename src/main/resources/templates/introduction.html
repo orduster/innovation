@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学院简介</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="css/index.css" th:href="@{/css/index.css}">
+    <link rel="stylesheet" href="css/college.css" th:href="@{/css/college.css}">
+</head>
+<body>
+<div class="container">
+
+    <!--引入顶端导航-->
+    <div th:replace="bar::topBar"></div>
+
+    <!--简介-->
+    <div class="row info">
+        <div class="col-md-12">
+            <div class="page-header" style="text-align: center;">
+                <h2>众创空间简介
+                    <small>南昌航空大学创新创业学院</small>
+                </h2>
+            </div>
+            <div th:utext="${introduction!=null}?${introduction.text}"></div>
+        </div>
+    </div>
+
+    <!--引入页脚-->
+    <div th:replace="bar::footBar"></div>
+</div>
+
+
+<script type="text/javascript" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script>
+    $(document).ready(function () {
+        $('p img').parent().css({"text-indent": "0em", "text-align": "center"});
+    })
+</script>
+</body>
+</html>

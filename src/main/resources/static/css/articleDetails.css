@@ -1,0 +1,41 @@
+img.media-object {
+    width: 29rem;
+}
+
+.article-info {
+    text-align: center;
+}
+
+span#author {
+    margin-right: 3rem;
+}
+
+span#from {
+    margin-right: 3rem;
+}
+
+span {
+    color: #836980;
+}
+
+label {
+    color: #716868;
+}
+
+p {
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: #716868;
+    text-indent: 3.5rem;
+}
+
+h4.media-heading {
+    color: #3c3c3c;
+    line-height: 2;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.panel-default > .panel-heading {
+    background-color: #dddddd;
+}
