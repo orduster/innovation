@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航</title>
+</head>
+<body>
+<!--导航栏-->
+<div th:fragment="topBar">
+    <div class="row ">
+        <div class="col-md-2">
+            <!--logo-->
+            <img src="img/logo1.png" th:src="@{/img/logo1.png}" alt="南昌航空大学" title="创新创业学院" class="img-responsive">
+        </div>
+        <div class="col-md-10">
+            <div class="col-md-12 md-span">
+                <div class="logo-span">创新创业实践学院</div>
+            </div>
+            <div class="col-md-12">
+                <!--导航-->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html" th:href="@{/index}">首页</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <!--关于我们-->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">关于我们<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="college.html" th:href="@{/college}">学院简介</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="structure.html" th:href="@{/structure}">人员结构</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="contact.html" th:href="@{/contact}">联系我们</a></li>
+                                    </ul>
+                                </li>
+                                <!--创业教育-->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">双创教育<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a th:href="@{/course}">创新创业课程</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a th:href="@{/practice}">创新创业实践</a></li>
+                                    </ul>
+                                </li>
+                                <!--双创团队-->
+                                <li><a href="team.html" th:href="@{/team}">双创团队</a></li>
+                                <!--导师团队-->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">导师团队<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a th:href="@{/onCampus}">校内导师团</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a th:href="@{/offCampus}">校外导师团</a></li>
+                                    </ul>
+                                </li>
+                                <!--双创成果-->
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">双创成果<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="entrepreneur.html" th:href="@{/entrepreneur}">双创标兵</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="works.html" th:href="@{/works}">双创作品</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">众创空间<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a th:href="@{/introduction}">简介</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a th:href="@{/activity}">活动</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">管理文件<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a th:href="@{/province}">省部级政策</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a th:href="@{/school}">校内文件</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a th:href="@{/resource}">资源下载</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:fragment="footBar">
+    <div class="footer">
+        <p>版权所有：南昌航空大学 创新创业实践学院 地址：南昌市丰和南大道696号</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>标兵详情</title>
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <link rel="stylesheet" th:href="@{/css/modelDetails.css}">
+</head>
+<body>
+<div class="container">
+
+    <!--引入顶端导航-->
+    <div th:replace="bar::topBar"></div>
+
+    <div class="row info">
+        <div class="col-md-8 col-md-offset-2">
+            <!--页头-->
+            <div class="page-header" style="text-align: center;">
+                <h2 th:text="${entrepreneur.name}"></h2>
+            </div>
+            <!--内容-->
+            <div th:utext="${entrepreneur!=null}?${entrepreneur.text}"></div>
+        </div>
+    </div>
+
+    <!--引入页脚-->
+    <div th:replace="bar::footBar"></div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+<script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+<script>
+    $(document).ready(function () {
+        $('p img').parent().css({"text-indent": "0em", "text-align": "center"});
+    })
+</script>
+</body>
+</html>
