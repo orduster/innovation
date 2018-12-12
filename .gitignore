@@ -1,26 +1,9 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
+.classpath
+.project
 .settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
-.idea/inspectionProfiles/
-.idea/vcs.xml
-.idea/workspace.xml
-target/classes/cn/
-target/generated-sources/
-target/generated-test-sources/
-target/innovation-0.0.1-SNAPSHOT/META-INF/
-target/surefire-reports/2018-11-14T16-59-17_146-jvmRun1.dump
+log/
+target/
+.idea/
+project.iml
+sonar-project.properties
+.scannerwork/

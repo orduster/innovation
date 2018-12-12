@@ -8,16 +8,16 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @MapperScan("cn.edu.nchu.innovation.mapper")
 @SpringBootApplication
-public class InnovationApplication extends SpringBootServletInitializer {
+public class InnovationApplication /*extends SpringBootServletInitializer*/ {
 
     public static void main(String[] args) {
         SpringApplication.run(InnovationApplication.class, args);
     }
 
     //为了打包springboot项目
-    @Override
+    /*@Override
     protected SpringApplicationBuilder configure(
             SpringApplicationBuilder builder) {
         return builder.sources(InnovationApplication.class);
-    }
+    }*/
 }
